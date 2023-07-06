@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	display: grid;
+	grid-template-columns: 20% 50% 30%;
+	grid-template-rows: 300px 125px 500px 300px;
+	grid-template-areas: 
+	"header header header  header"
+	"data data data data"
+	"middle01 middle01 middle01 middle01"
+	"footer footer footer footer"
+}
+.item{
+	width:100%;
+	background-color:#FBE0F2;
+	border: 1px solid #FFFFFF;
+	
+}
+
+.item01{
+	grid-area:header;
+}
+
+.item02{
+	grid-area:data;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+	color: #551A8B;
+}
+
+.item03{
+	grid-area:middle01;
+	display: flex;
+	justify-content: center;
+}
+.box3{
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+	color: #551A8B;
+	width:25%;
+	height:480px;
+	background-color:#FFFFFF;
+	margin: 1%;
+	overflow: hidden;
+	position: relative;
+	}
+.box3 img{
+	opacity: 1;
+	transition: all 0.5s linear;
+	transform: scale(1);
+}
+.box3:hover img{
+	opacity: 0.5;
+	transform: scale(1.1);
+}
+.label01
+{
+	width: 91%;
+	height:30px;
+	background-color: #FBE0F2;
+	opacity:0;
+	line-height:30px;
+	margin-top: 0%;
+	color:#FFFFFF;
+	position: absolute;
+}
+
+.box3 .label01
+{
+	opacity: 0;
+	transition: all 0.3s linear;
+	top:200px;
+}
+.box3:hover .label01
+{
+	opacity: 1;
+	top:15%;
+}
+.item04{
+	grid-area:footer;
+	box-sizing: border-box;
+	color: #551A8B;
+	padding: 20px 10px 10px 0px;
+	float: right;
+	
+	
+	
+}
+.box4{
+	box-sizing: border-box;
+	padding: 10px;
+	color: #551A8B;
+	width:25%;
+	height:20px;
+	background-color:aliceblue;
+	float: right;
+	margin: 1%;
+}
+
+.item_color
+{
+	width: 24.86%;
+	height:48px;
+	background-color:black;
+	float: left;
+	border: 1px solid #FFFFFF;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	float: left;
+	
+	position: relative;
+	padding: 20px 110px;
+	
+	
+}
+ul li a{
+	text-decoration: none;
+	
+}
+
+.item ul li:hover{
+	background-color:#FBE0F2;
+	
+}
+
+.item ul li ul
+{
+	position: absolute;
+	width:282px;
+	top: 58px;
+	
+	background-color:#FFFFFF;
+	left:0;
+	visibility: hidden;
+}
+
+ul li:hover ul
+{
+	
+	visibility: visible;
+}
+ul li ul li{
+	width: 62px;
+}
+
+h2{
+	text-align: center;
+	font-style: italic;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	left: 20px;
+	padding: 0 0 0 10px;
+	
+}
